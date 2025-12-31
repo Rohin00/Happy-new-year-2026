@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beautiful Love - 2026 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Georgia', serif;
+        overflow-x: hidden;
+        background: #0a0a0a;
+        color: #fff;
+    }
+
+    .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .star {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle 3s infinite;
+    }
+
+    @keyframes twinkle {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    .floating-emoji {
+        position: fixed;
+        font-size: 2.5em;
+        pointer-events: none;
+        z-index: 3;
+        animation: float-up 8s linear infinite;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    }
+
+    @keyframes float-up {
+        0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-150px) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    .firework {
+        position: fixed;
+        pointer-events: none;
+        z-index: 4;
+    }
+
+    .firework-particle {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px currentColor;
+        animation: explode 1.2s ease-out forwards;
+    }
+
+    @keyframes explode {
+        0% {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(var(--tx), var(--ty));
+            opacity: 0;
+        }
+    }
+
+    /* SECTION 1 - NEW YEAR 2026 */
+    .section {
+        position: relative;
+        min-height: 100vh;
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .section-1 {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+
+    .section-2 {
+        background: linear-gradient(135deg, #2d1b69 0%, #6b1b5e 50%, #c2185b 100%);
+    }
+
+    .section-3 {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+    }
+
+    .content-wrapper {
+        max-width: 1100px;
+        width: 100%;
+        animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+        font-size: 5em;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        animation: glow 2s ease-in-out infinite;
+    }
+
+    .section-1 .section-title {
+        background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700, #ff69b4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 200% auto;
+        animation: glow 2s ease-in-out infinite, shimmer 3s linear infinite;
+    }
+
+    .section-2 .section-title {
+        background: linear-gradient(45deg, #ff6b9d, #c2185b, #ff1493, #ff69b4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 200% auto;
+        animation: glow 2s ease-in-out infinite, shimmer 3s linear infinite;
+    }
+
+    .section-3 .section-title {
+        background: linear-gradient(45deg, #89d4f7, #5e9ed6, #89d4f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 200% auto;
+        animation: glow 2s ease-in-out infinite, shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+        to { background-position: 200% center; }
+    }
+
+    @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); }
+        50% { filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.9)); }
+    }
+
+    .subtitle {
+        font-size: 2em;
+        text-align: center;
+        color: #ffd700;
+        margin-bottom: 50px;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+
+    .message-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 30px;
+        padding: 60px;
+        margin: 40px 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .message-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        animation: rotate-shimmer 4s infinite;
+    }
+
+    @keyframes rotate-shimmer {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .message-card p {
+        font-size: 1.5em;
+        line-height: 2.2;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .message-card p:first-of-type {
+        font-size: 1.8em;
+        font-style: italic;
+        color: #ffd700;
+    }
+
+    .heart-divider {
+        text-align: center;
+        margin: 50px 0;
+        font-size: 3em;
+    }
+
+    .heart {
+        display: inline-block;
+        animation: heartbeat 1.5s infinite;
+        margin: 0 10px;
+        filter: drop-shadow(0 0 10px rgba(255, 107, 157, 0.8));
+    }
+
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        25% { transform: scale(1.3); }
+        50% { transform: scale(1); }
+    }
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 35px;
+        margin: 60px 0;
+    }
+
+    .photo-frame {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 25px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section-1 .photo-frame:hover {
+        transform: scale(1.08) translateY(-15px) rotate(3deg);
+        box-shadow: 0 20px 50px rgba(255, 215, 0, 0.6);
+        border-color: rgba(255, 215, 0, 0.8);
+    }
+
+    .section-2 .photo-frame:hover {
+        transform: scale(1.08) translateY(-15px) rotate(-3deg);
+        box-shadow: 0 20px 50px rgba(255, 107, 157, 0.6);
+        border-color: rgba(255, 107, 157, 0.8);
+    }
+
+    .section-3 .photo-frame:hover {
+        transform: scale(1.08) translateY(-15px) rotate(2deg);
+        box-shadow: 0 20px 50px rgba(137, 212, 247, 0.6);
+        border-color: rgba(137, 212, 247, 0.8);
+    }
+
+    .photo-placeholder {
+        width: 100%;
+        height: 280px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5em;
+        box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section-1 .photo-placeholder {
+        background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    }
+
+    .section-2 .photo-placeholder {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffecd2 100%);
+    }
+
+    .section-3 .photo-placeholder {
+        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    }
+
+    .photo-caption {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #ffd700;
+        font-style: italic;
+    }
+
+    .promise-list {
+        margin: 40px 0;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        border-left: 5px solid #ff69b4;
+    }
+
+    .promise-item {
+        font-size: 1.4em;
+        line-height: 2;
+        margin: 25px 0;
+        padding-left: 40px;
+        position: relative;
+    }
+
+    .promise-item::before {
+        content: '💕';
+        position: absolute;
+        left: 0;
+        font-size: 1.5em;
+    }
+
+    .signature {
+        text-align: center;
+        font-size: 2.5em;
+        margin-top: 60px;
+        font-style: italic;
+        background: linear-gradient(45deg, #ff6b9d, #ffd700);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 0 15px rgba(255, 107, 157, 0.6));
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+
+    .scroll-indicator {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.2em;
+        color: #ffd700;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .apology-highlight {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 20px;
+        margin: 30px 0;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+```
+<!-- SECTION 1: HAPPY NEW YEAR 2026 -->
+<div class="section section-1">
+    <div class="content-wrapper">
+        <div class="section-title">Happy New Year 2026</div>
+        <div class="subtitle">🎊 A Fresh Start, A New Chapter with You 🎊</div>
+        
+        <div class="message-card">
+            <p>Mera pyar 
+meri Anjluu🎀,</p>
+            <p>puttuu mee bhut khush aa ki asi ik sath 2026 ch ja rhee or me bhut khush a ki tu eh padhugi or kosis a putt ki tu v khush hoyugi pura padhi. Bugguu tere nal 2024 ch suru vaat kri ti sade ch bhut kush aya bhut vaar breakup hoye pr asi alag ni hoye. tu meri zingi ch khushiya bhr ditiya me ena kush ni rehnda ta pr tere anne nal ho gya ta. tere nal meri zindgi hor v khubsurat hoggi v 💟jida hi 12 vjne 2026 suru hona tu eh padhdi hona me tenu eh pej dena.</p>
+            <p>Iss sall ch bhut kush hoya puttt kafii kush bhut khubsurat vadiya sall gya eh sadda kinnii vaar mille luk luk ke mille kinne risk lye. puttu tu menu pyar da mtlb samjaya tu daseya ki kidda krdee teri awaj tera cehra tera pett v menu sub kush psnd a jida tu hai me ehi chnda ki tu hamesha khush rhee </p>
+            <p>Ajj asii fr ik nvi suruvatt krde aa naviya chiza eh sall v khusiya barya hona endless love nal asi hamesha ikhate rehna. Thanku putt meri zindgi ch anne vaste mere nal rehn vaste menu choose krn vaste har vaar 🥹. </p>
+        </div>
+
+        <div class="heart-divider">
+            <span class="heart">💝</span>
+            <span class="heart">✨</span>
+            <span class="heart">💖</span>
+            <span class="heart">✨</span>
+            <span class="heart">💕</span>
+        </div>
+
+        
+        </div>
+
+        <div class="scroll-indicator">
+            ↓ Keep scrolling for more love ↓
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 2: FOREVER FUTURE -->
+<div class="section section-2">
+    <div class="content-wrapper">
+        <div class="section-title">We Are Forever</div>
+        <div class="subtitle">💕 Our Love Story Has No Ending 💕</div>
+        
+        <div class="message-card">
+            <p>My Forever Love,</p>
+            <p>Putt tenu pta me sochda rehnda or jad v me future vare sochda na me dhekda tenu tere hath ch mera hath tu mere pass or asii duniya di best life jee rhee. Tu meri kllii girlfriend ni a tu mera sub kush a mera dost meri patni mera confidence meri motivation meri soulmate. tu oh a jinuu me rojj swere uttke apne nall dhekna chnda soi v nu mera pyarr 🧿🫂</p>
+            <p>I promise you bugguu eh pyar kde ght ni hona eh din pr din vad da janda. me promise krda ki me tere nal teri har ik mushkil ch kaduga har ik chiz ch teri himaat banke or teriya khusiya ch v. Me tora filmy a me tere nal beach sunset rain sub kush krna chnda pr bass tere nall kyuki tuhi mera supna a tuhi mera future </p>
+            <p>Anjluu tere nal rehke me bhut kush sikya tere kol te me pyar sikya oh pyar jo ghr varga lagda oh pyar jo sanu thik krda sadi strength banda tu menu jeena shikaya har ik ladne vaste himmat diti koi v gal hove mere nal rehndi ti har tym hun me tenu choose krda tere nall sari zindgi 🫂</p>
+        </div>
+
+        <div class="promise-list">
+            <div class="promise-item">I promise to make you smile every single day, even on the tough ones</div>
+            <div class="promise-item">I promise to support your dreams as fiercely as I pursue my own</div>
+            <div class="promise-item">I promise to be patient, kind, and understanding</div>
+            <div class="promise-item">I promise to grow with you, learn with you, and build with you</div>
+            <div class="promise-item">I promise to love you unconditionally, now and forever</div>
+            <div class="promise-item">I promise to make our future as beautiful as you've made my present</div>
+        </div>
+
+        <div class="heart-divider">
+            <span class="heart">💗</span>
+            <span class="heart">🌹</span>
+            <span class="heart">💞</span>
+            <span class="heart">🌹</span>
+            <span class="heart">💓</span>
+        </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ↓ There's something important below ↓
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 3: HEARTFELT APOLOGY -->
+<div class="section section-3">
+    <div class="content-wrapper">
+        <div class="section-title">I'm Sorry</div>
+        <div class="subtitle">💙 From the Bottom of My Heart 💙</div>
+        
+        <div class="message-card">
+            <p>My Dearest Love,</p>
+            <p>Putt jo kush v iss saal hoyaa me bhut galtiya kitiya me lalla banda a pr putt janke ni krna chnda kde v tu bhut gussa hundi thi ude vaste i am so sorry putt 🙇‍♂️</p>
+            
+            <div class="apology-highlight">
+                <p>I'm sorry for the I am sorry putt ki me teri gal sunke v galti krr dinda taa sorry ki me lalla ta samjda ni ta baddimag ta sorry jiniya v sadiya ladaiya hoiyaa i am soryy putt 🥺.  Sub te bda sorry putt ajjj vaste tuu mere hunde hoye ve enaa roii 😭 sorryy puttt </p>
+            </div>
+
+            <p>Me tenu promise krda putt ki me vadiya insaan bnuga tere lyii koi galti ni kreya krni teraa good boy banke reha krna eh rishta mere lyi buut khass a tu mere lyi bhut khass aa iss krke putt i am sorryy 🥺🤌</p>
+            <p>Thank you for your patience, your grace, and your unwavering love. Thank you for seeing the best in me even when I fall short. I love you more than words can express, and I'm committed to showing you that love in every action, every day, for the rest of our lives.End ch thankuu putt tere sabar vaste tere pyar vaste teri samaj vaste tere maaf krn vaste me keh ni sakda prr thanku putt soo much 😚 
+i lovee youu puttuu 
+i lovee youu Anjluu 
+😚💟🎀🥺🫂🧿😭🫶</p>
+        </div>
+
+        <div class="heart-divider">
+            <span class="heart">💙</span>
+            <span class="heart">🕊️</span>
+            <span class="heart">💙</span>
+            <span class="heart">🕊️</span>
+            <span class="heart">💙</span>
+        </div>
+
+        </div>
+
+        <div class="signature">
+            Forever Yours, With All My Love ❤️
+            <div style="font-size: 0.6em; margin-top: 20px;">Happy New Year 2026, My Beautiful Love 💕</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Create beautiful twinkling stars
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 200; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.width = Math.random() * 3 + 1 + 'px';
+        star.style.height = star.style.width;
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        starsContainer.appendChild(star);
+    }
+
+    // Romantic floating emojis
+    const emojis = ['💕', '💖', '💝', '💗', '💓', '💞', '🌹', '✨', '🎉', '🎊', '🥂', '🎆', '💑', '❤️', '🌟', '💐', '🦋', '🌺'];
+    
+    function createFloatingEmoji() {
+        const emoji = document.createElement('div');
+        emoji.className = 'floating-emoji';
+        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emoji.style.left = Math.random() * 100 + '%';
+        emoji.style.animationDuration = (Math.random() * 4 + 6) + 's';
+        emoji.style.animationDelay = Math.random() * 2 + 's';
+        document.body.appendChild(emoji);
+        
+        setTimeout(() => emoji.remove(), 10000);
+    }
+
+    setInterval(createFloatingEmoji, 500);
+
+    // Spectacular continuous fireworks
+    function createFirework() {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        firework.style.left = (Math.random() * 80 + 10) + '%';
+        firework.style.top = (Math.random() * 50 + 10) + '%';
+        
+        const colors = ['#ff0844', '#ff69b4', '#ffd700', '#00ff00', '#00bfff', '#ff1493', '#ff6347', '#ffa500', '#9c27b0', '#00ffff'];
+        const particleCount = 45;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'firework-particle';
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.backgroundColor = color;
+            
+            const angle = (Math.PI * 2 * i) / particleCount;
+            const velocity = Math.random() * 130 + 90;
+            particle.style.setProperty('--tx', Math.cos(angle) * velocity + 'px');
+            particle.style.setProperty('--ty', Math.sin(angle) * velocity + 'px');
+            
+            firework.appendChild(particle);
+        }
+        
+        document.body.appendChild(firework);
+        setTimeout(() => firework.remove(), 1200);
+    }
+
+    // Continuous fireworks display
+    setInterval(createFirework, 1500);
+    
+    // Initial grand fireworks show
+    setTimeout(() => {
+        for (let i = 0; i < 12; i++) {
+            setTimeout(createFirework, i * 200);
+        }
+    }, 500);
+
+    // Burst of fireworks every 6 seconds
+    setInterval(() => {
+        for (let i = 0; i < 4; i++) {
+            setTimeout(createFirework, i * 150);
+        }
+    }, 6000);
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+```
+
+</body>
+</html>
